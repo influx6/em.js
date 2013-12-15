@@ -98,8 +98,6 @@ var isNode = (function(){
     if(!!isNode()){
         lib.fn.call(env,em,lib);
         lib.module.exports = env.exports;
-        if(keys(lib.module.exports) === 1 && typeof lib.module.exports['exports'] !== null) 
-          lib.module.exports = lib.module.exports.exports;
         mods.modules[name] = lib;
         return lib.module.exports;
     }
@@ -118,5 +116,6 @@ var isNode = (function(){
     _.em = em;
     requirefix(_);
   }
+
 
 })(this);

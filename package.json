@@ -1,5 +1,5 @@
 {
-  "name": "em",
+  "name": "em.js",
   "version": "0.0.1",
   "description": "a simple context wrapper for browser or nodejs.",
   "main": "em.js",
